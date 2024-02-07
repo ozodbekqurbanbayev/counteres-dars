@@ -98,6 +98,9 @@ img{
   padding-top: 48px;
   padding-bottom: 48px;
 }
+.main-content-inner{
+padding-top: 80px;
+}
 
 /* SITE-HEADER */
 .site-header {
@@ -158,7 +161,18 @@ color: var(--text-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 48px;
+  position: relative;
+  color: var(--text-color);
 
+}
+.search-img{
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+left: 30px;
 }
 .filters-search-input {
   min-width: 480px;
@@ -177,4 +191,186 @@ color: var(--text-color);
   box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.06);
   background-color: var(--element-bg);
 color: var(--text-color);
+}
+
+/* INDEX-COUNTRIES */
+
+.index-countries-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -75px;
+  margin-bottom: -75px;
+  list-style: none;
+
+
+}
+.index-countries-item {
+  width: calc(25% - 75px);
+  margin-left: 75px;
+  margin-bottom: 75px;
+}
+
+/* INDEX-COUNTRY */
+.index-country {
+  border-radius: 7px;
+  overflow: hidden;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+}
+.index-country-flag {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.index-country-info {
+  padding: 24px 24px 48px;
+}
+.index-country-name {
+  margin-top: 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 800;
+  margin-bottom: 16px;
+white-space: nowrap;
+letter-spacing: -0.7px;
+}
+.index-country-link{
+  color: var(--text-color);
+}
+.index-country-details {
+  margin: 0;
+  padding: 0;
+}
+.index-country-details-item{
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-country-details-item:not(:last-child){
+  margin-bottom: 8px;
+}
+.index-country-details-title {
+
+  font-weight: 600;
+}
+.index-country-details-valeu {
+  margin-left: 4px;
+  font-weight: 300;
+}
+
+/* COUNTRY-PAGE */
+.country-page-back-wrapper {
+  margin-bottom: 80px;
+}
+.country-page-back-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--element-bg);
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.3);
+  padding: 10px 40px;
+  border-radius: 6px;
+}
+.country-page-back-link:hover{
+opacity: 0.8;
+}
+.country-page-back-link:active{
+opacity: 0.6;
+}
+.country-page-back-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.country-page-back-text {
+  font-size: 16px;
+  line-height: 20px;
+}
+.country-page-flag-info{
+  display: flex;
+}
+.country-page-flag{
+  width: 560px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 120px;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.1);
+}
+/* COUNTRY-PAGE-INFO */
+.country-page-info {
+width: 600px;
+padding-top: 40px;
+}
+.country-page-title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 44px;
+}
+.country-page-dls-wrapper {
+  display: flex;
+  justify-content: space-between;
+ margin-bottom: 70px;
+}
+.country-page-details {
+  width: 250px;
+}
+.country-page-details-item{
+  display: flex;
+}
+.country-page-details-item:not(:last-child){
+  margin-bottom: 12px;
+}
+.country-page-details-title {
+margin-right: 4px;
+font-weight: 600;
+}
+.country-page-details-value {
+ font-weight: 300;
+ margin: 0;
+}
+
+/* COUNTRY-PAGE-BORDER-COUNTRIES */
+.country-page-border-countries {
+display: flex;
+align-items: center;
+}
+.country-page-border-countries-heading {
+ margin-top: 0;
+ margin-bottom: 0;
+margin-right: 15px;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+
+}
+.country-page-border-countries-list {
+  display: flex;
+flex-wrap: wrap;
+}
+.country-page-border-countries-link {
+  padding: 5px 10px;
+  min-width: 96px;
+  background-color: var(--element-bg);
+  color: var(--text-color);
+  text-align: center;
+border-radius: 2px;
+margin-top: 4px;
+margin-bottom: 4px;
+box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+transition: background-color 0.4s ease, color 0.4s ease;
+}
+.country-page-border-countries-link:not(:last-child){
+  margin-right: 10px;
+}
+.country-page-border-countries-link:hover{
+  opacity: 0.8;
+}
+.country-page-border-countries-link:active{
+  opacity: 0.6;
 }
