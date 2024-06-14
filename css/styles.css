@@ -68,6 +68,7 @@ body {
   color: var(--text-color);
   transition:background-color 0.4s ease,
   color 0.4s ease;
+
 }
 /* DARK MODE */
 .dark-mode{
@@ -167,12 +168,14 @@ color: var(--text-color);
 
 }
 .search-img{
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
   object-fit: cover;
   position: absolute;
-  top: 20px;
-left: 30px;
+  top: 19px;
+left: 32px;
+pointer-events: none;
+
 }
 .filters-search-input {
   min-width: 480px;
